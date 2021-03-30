@@ -27,4 +27,5 @@ set-alias kaw kaw_function
 
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme "$Env:OneDrive\devops\impoptools\ohmyposh.nu4a.omp.json"
+$CurrentPath = Split-Path $PSCommandPath -Parent
+Set-PoshPrompt -Theme "$CurrentPath\ohmyposh.nu4a.omp.json"
