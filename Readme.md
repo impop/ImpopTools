@@ -1,3 +1,14 @@
+# powershell profile
+
+If profile is sync with Onedrive add this to the local $Profile file
+
+```powershell
+'loading PS Onedrive profile'
+. $Env:OneDrive\Devops\Impoptools\Microsoft.PowerShell_profile.ps1
+```
+
+Apply the same method if sync with using other ways
+
 # Decrapify
 
 Execute the script to decrapify windows 10 18xx/19xx. Use this:
