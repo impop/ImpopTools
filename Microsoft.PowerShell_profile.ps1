@@ -24,3 +24,7 @@ set-alias k kubectl
 set-alias kgp kgp_function
 set-alias ka ka_function
 set-alias kaw kaw_function
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-PoshPrompt -Theme "$Env:OneDrive\devops\impoptools\ohmyposh.nu4a.omp.json"
