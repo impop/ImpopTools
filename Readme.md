@@ -43,3 +43,10 @@ Folder FixRDPDPI
 1. Merge *PreferExternalManigest.reg*
 2. Copy *mstsc.exe.manifest* to *%SYSTEMROOT%\system32*
 
+# Bravia commands
+
+Pre-shared key 1234 is set up in the settings menu network & settings -> home network setup -> ip control
+TV IP might change since it's set to DHCP
+REST reference in https://pro-bravia.sony.net/develop/integrate/rest-api/spec/service/video/v1_0/setPictureQualitySettings/index.html
+good info on https://gist.github.com/kalleth/e10e8f3b8b7cb1bac21463b0073a65fb
+
