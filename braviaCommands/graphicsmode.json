@@ -1,0 +1,15 @@
+{
+    "method": "setPictureQualitySettings",
+    "id": 12,
+    "params": [
+        {
+            "settings": [
+                {
+                    "value": "graphics",
+                    "target": "pictureMode"
+                }
+            ]
+        }
+    ],
+    "version": "1.0"
+}

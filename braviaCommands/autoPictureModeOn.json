@@ -1,0 +1,15 @@
+{
+    "method": "setPictureQualitySettings",
+    "id": 12,
+    "params": [
+        {
+            "settings": [
+                {
+                    "value": "auto24p",
+                    "target": "autoPictureMode"
+                }
+            ]
+        }
+    ],
+    "version": "1.0"
+}
