@@ -7,6 +7,10 @@
                 {
                     "value": "cinemaHome",
                     "target": "pictureMode"
+                },
+                {
+                    "target": "lightSensor",
+                    "value": "off"
                 }
             ]
         }

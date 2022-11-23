@@ -7,6 +7,10 @@
                 {
                     "value": "sports",
                     "target": "pictureMode"
+                },
+                {
+                    "target": "lightSensor",
+                    "value": "off"
                 }
             ]
         }
