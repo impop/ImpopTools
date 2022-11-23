@@ -1,0 +1,15 @@
+{
+    "method": "setPictureQualitySettings",
+    "id": 12,
+    "params": [
+        {
+            "settings": [
+                {
+                    "value": "auto",
+                    "target": "hdrMode"
+                }
+            ]
+        }
+    ],
+    "version": "1.0"
+}

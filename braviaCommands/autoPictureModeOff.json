@@ -1,0 +1,15 @@
+{
+    "method": "setPictureQualitySettings",
+    "id": 12,
+    "params": [
+        {
+            "settings": [
+                {
+                    "value": "off",
+                    "target": "autoPictureMode"
+                }
+            ]
+        }
+    ],
+    "version": "1.0"
+}
