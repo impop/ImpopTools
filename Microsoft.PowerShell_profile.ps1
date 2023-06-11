@@ -26,6 +26,6 @@ set-alias ka ka_function
 set-alias kaw kaw_function
 
 Import-Module posh-git
-Import-Module oh-my-posh
+# Import-Module oh-my-posh
 $CurrentPath = Split-Path $PSCommandPath -Parent
-Set-PoshPrompt -Theme "$CurrentPath\ohmyposh.nu4a.omp.json"
+oh-my-posh init pwsh --config "$CurrentPath\ohmyposh.nu4a.omp.json" | Invoke-Expression
