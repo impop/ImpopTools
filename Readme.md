@@ -1,4 +1,5 @@
-# powershell profile
+
+## powershell profile
 
 If profile is sync with Onedrive add this to the local $Profile file
 
@@ -9,7 +10,7 @@ If profile is sync with Onedrive add this to the local $Profile file
 
 Apply the same method if sync with using other ways
 
-# Decrapify
+## Decrapify
 
 Execute the script to decrapify windows 10 18xx/19xx. Use this:
 
@@ -20,7 +21,7 @@ For 2004 version
 
 https://github.com/farag2/Windows-10-Setup-Script
 
-# Aliases
+## Aliases
 
 Folder _aliases_
 
@@ -31,19 +32,11 @@ Folder _aliases_
 2. Place *Microsoft.PowerShell_profile.ps1* under *%USERPROFILE%\Documents\WindowsPowerShell*
 3. Place .bash_profile under *%USERPROFILE%*
 
-
-# Markdown references
+## Markdown references
 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-# Fix DPI issues with RDP
-
-Folder FixRDPDPI
-
-1. Merge *PreferExternalManigest.reg*
-2. Copy *mstsc.exe.manifest* to *%SYSTEMROOT%\system32*
-
-# Bravia commands
+## Bravia commands
 
 Pre-shared key 1234 is set up in the settings menu network & settings -> home network setup -> ip control
 
