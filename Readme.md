@@ -38,10 +38,18 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ## Bravia commands
 
-Pre-shared key 1234 is set up in the settings menu network & settings -> home network setup -> ip control
+Commands are split between Dublin (D folder) and Carlingford (CF)
 
-TV IP might change since it's set to DHCP
+- Pre-shared key is set up in the settings menu network & settings -> home network setup -> ip control
+- TV IP might change since it's set to DHCP
+- REST reference in <https://pro-bravia.sony.net/develop/integrate/rest-api/spec/service/video/v1_0/setPictureQualitySettings/index.html>
+- Good info on <https://gist.github.com/kalleth/e10e8f3b8b7cb1bac21463b0073a65fb>
 
-REST reference in https://pro-bravia.sony.net/develop/integrate/rest-api/spec/service/video/v1_0/setPictureQualitySettings/index.html
+### Dublin
 
-good info on https://gist.github.com/kalleth/e10e8f3b8b7cb1bac21463b0073a65fb
+Pre-shared key is 1234
+
+### Carlingford
+
+Pre-shared key %SHAREDKEY%
+ 

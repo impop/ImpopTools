@@ -4,7 +4,13 @@ curl http://%IP%/sony/video ^
 -H "Content-Type: application/json" ^
 -H "X-Auth-PSK: %SHAREDKEY%" ^
 -X POST ^
--d @payloads\gameMode.json
+-d @payloads\autoPictureModeOff.json
+
+curl http://%IP%/sony/video ^
+-H "Content-Type: application/json" ^
+-H "X-Auth-PSK: %SHAREDKEY%" ^
+-X POST ^
+-d @payloads\cinemaHomemode.json
 
 curl http://%IP%/sony/video ^
 -H "Content-Type: application/json" ^
@@ -16,11 +22,5 @@ curl http://%IP%/sony/video ^
 -H "Content-Type: application/json" ^
 -H "X-Auth-PSK: %SHAREDKEY%" ^
 -X POST ^
--d @payloads\autoPictureModeOff.json
-
-
-curl http://%IP%/sony/video ^
--H "Content-Type: application/json" ^
--H "X-Auth-PSK: %SHAREDKEY%" ^
--X POST ^
 -d @payloads\hdrModeAuto.json
+

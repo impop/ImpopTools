@@ -1,23 +1,25 @@
-curl http://192.168.1.15/sony/video ^
--H "Content-Type: application/json" ^
--H "X-Auth-PSK: 1111" ^
--X POST ^
--d @graphicsmode.json
+call "vars.bat" %1
 
-curl http://192.168.1.15/sony/video ^
+curl http://%IP%/sony/video ^
 -H "Content-Type: application/json" ^
--H "X-Auth-PSK: 1111" ^
+-H "X-Auth-PSK: %SHAREDKEY%" ^
 -X POST ^
--d @hdrModeOff.json
+-d @payloads\graphicsmode.json
 
-curl http://192.168.1.15/sony/video ^
+curl http://%IP%/sony/video ^
 -H "Content-Type: application/json" ^
--H "X-Auth-PSK: 1111" ^
+-H "X-Auth-PSK: %SHAREDKEY%" ^
 -X POST ^
--d @autoPictureModeOn.json
+-d @payloads\hdrModeOff.json
 
-curl http://192.168.1.15/sony/video ^
+curl http://%IP%/sony/video ^
 -H "Content-Type: application/json" ^
--H "X-Auth-PSK: 1111" ^
+-H "X-Auth-PSK: %SHAREDKEY%" ^
 -X POST ^
--d @hdrModeAuto.json
+-d @payloads\autoPictureModeOn.json
+
+curl http://%IP%/sony/video ^
+-H "Content-Type: application/json" ^
+-H "X-Auth-PSK: %SHAREDKEY%" ^
+-X POST ^
+-d @payloads\hdrModeAuto.json
