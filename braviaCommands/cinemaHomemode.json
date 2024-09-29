@@ -5,12 +5,8 @@
         {
             "settings": [
                 {
-                    "value": "cinemaHome",
+                    "value": "cinema",
                     "target": "pictureMode"
-                },
-                {
-                    "target": "lightSensor",
-                    "value": "off"
                 }
             ]
         }

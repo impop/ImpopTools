@@ -5,13 +5,10 @@
         {
             "settings": [
                 {
-                    "value": "vivid",
+                    "value": "game",
                     "target": "pictureMode"
-                },
-                {
-                    "target": "lightSensor",
-                    "value": "off"
                 }
+                
             ]
         }
     ],

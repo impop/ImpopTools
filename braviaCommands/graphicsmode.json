@@ -9,9 +9,9 @@
                     "target": "pictureMode"
                 },
                 {
-                    "target": "lightSensor",
-                    "value": "on"
-                }
+                    "value": "5",
+                    "target": "brightness"
+                }              
             ]
         }
     ],

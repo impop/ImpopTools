@@ -5,7 +5,7 @@
         {
             "settings": [
                 {
-                    "value": "auto24p",
+                    "value": "auto",
                     "target": "autoPictureMode"
                 }
             ]
