@@ -12,6 +12,14 @@ curl http://%IP%/sony/video ^
 -X POST ^
 -d @payloads\cinemaHomemode.json
 
+
+REM old sony tv picturemode
+curl http://%IP%/sony/video ^
+-H "Content-Type: application/json" ^
+-H "X-Auth-PSK: %SHAREDKEY%" ^
+-X POST ^
+-d @payloads\cinemaHomeOldmode.json
+
 curl http://%IP%/sony/video ^
 -H "Content-Type: application/json" ^
 -H "X-Auth-PSK: %SHAREDKEY%" ^
