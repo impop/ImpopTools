@@ -1,31 +1,15 @@
 function global:prompt {
     $PwdPath = Split-Path -Path $pwd -Leaf
     Write-Host -Object "$PwdPath" -NoNewline -ForegroundColor Magenta
-
+ 
     return "> "
 }
-
-Function kgp_function {
-   $a = $args
-   if ($args -eq "."){ $a = $pwd }
-   kubectl get pods $a    
+ 
+#Import-Module posh-git
+ 
+$omp_cache = "$env:TEMP\omp_init.ps1"
+if (!(Test-Path $omp_cache) -or ((Get-Date) - (Get-Item $omp_cache).LastWriteTime).TotalDays -gt 1) {
+    $CurrentPath = $PSScriptRoot
+    oh-my-posh init pwsh --config "$CurrentPath\ohmyposh.nu4a.omp.json" | Out-File $omp_cache
 }
-Function ka_function {
-    $a = $args
-    if ($args -eq "."){ $a = $pwd }
-    kubectl apply $a
-}
-
-Function kaw_function {
-    kubectl get pods -A -o wide
-}
-
-set-alias k kubectl
-set-alias kgp kgp_function
-set-alias ka ka_function
-set-alias kaw kaw_function
-
-Import-Module posh-git
-# Import-Module oh-my-posh
-$CurrentPath = Split-Path $PSCommandPath -Parent
-oh-my-posh init pwsh --config "$CurrentPath\ohmyposh.nu4a.omp.json" | Invoke-Expression
+. $omp_cache
